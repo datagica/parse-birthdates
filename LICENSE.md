@@ -1,6 +1,6 @@
 
-   @datagica/parse-birthdays
-   A Node module that parses an age from a document
+   @datagica/parse-birthdates
+   A Node module that parses birth dates from a document
 
    Copyright (C) 2018  Julian Bilcke <julian.bilcke@datagica.com>
 
