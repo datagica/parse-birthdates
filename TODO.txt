@@ -1,0 +1,111 @@
+
+      [
+        { // believable french birth date
+          input: "date de naissance: 1 avril 1985",
+          output: {
+            age: calculateAge(new Date(1985, 4, 1))
+          }
+        },
+        { // french birth date - but too old
+          input: "date de naissance: 1 avril 1838",
+          output: null
+        },
+        { // french birth date - but too young
+          input: "date de naissance: 1 avril 2005",
+          output: null
+        },
+
+        { // French
+          input: "j'ai 29 ans",
+          output: {
+            age: 29
+          }
+        },
+
+        { // Arabic
+          input: "أنا 42 سنة",
+          output: {
+            age: 42
+          }
+        },
+
+        {
+          input: "Jeg er 22 år",
+          output: {
+            age: 22
+          }
+        },
+
+        { // Finnish
+          input: "Olen 23 vuotias",
+          output: {
+            age: 23
+          }
+        },
+        { // Greek
+          input: "Είμαι 39 ετών",
+          output: {
+            age: 39
+          }
+        },
+        {
+          // Hebrew
+          input: "אני בן 62 שנים",
+          output: {
+            age: 62
+          }
+        },
+        {
+          input: "Ik ben 21 jaar oud",
+          output: {
+            age: 21
+          }
+        },
+        { // German
+          input: "27 jahre",
+          output: {
+            age: 27
+          }
+        },
+
+        { // English
+          input: "I have 99 problems",
+          output: null
+        },
+
+        { // English
+          input: "age: 55",
+          output: {
+            age: 55
+          }
+        },
+
+        { // English, 0 is not a valid age
+          input: "age: 0",
+          output: null
+        },
+        { // English, should not match, because of the age filter
+          input: "I've worked on this project for 5 years",
+          output: null
+        },
+        { // English, min age
+          input: "Green, Martian, 21 years",
+          output: {
+            age: 21
+          }
+        },
+        { // English, below min age
+          input: "Green, Martian, 20 years",
+          output: null
+        },
+        { // English, beyond max age
+          input: "Green, Martian, 76 years",
+          output: null
+        },
+        { // English, max age
+          input: "Green, Martian, 75 years",
+          output: {
+            age: 75
+          }
+        }
+      ]

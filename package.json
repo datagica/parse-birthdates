@@ -1,0 +1,24 @@
+{
+  "name": "@datagica/parse-birthdates",
+  "version": "0.0.0",
+  "description": "Extract birth dates from a text",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Julian Bilcke <julian.bilcke@datagica.com>",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/datagica/parse-birthdates.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@datagica/tokenize": "^0.0.2"
+  },
+  "devDependencies": {
+    "jest": "^22.3.0"
+  }
+}
