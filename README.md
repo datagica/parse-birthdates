@@ -13,14 +13,11 @@ will output:
       {
         "ngram": "age: 77",
         "value": {
-          "id": "birthdate-1941",
+          "id": "birthdate-1941-02-01",
           "label": {
-            "en": "Wed Jan 01 1941 00:00:00 GMT+0100 (CET)"
+            "en": "1941-02-01"
           },
-          "timestamp": -915152400000,
-          "month": 1,
-          "date": 1,
-          "year": 1941,
+          "date": "1941-02-01",
           "age": 77,
           "keywords": {
             "en": [

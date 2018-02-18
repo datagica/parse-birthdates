@@ -1,6 +1,6 @@
 {
   "name": "@datagica/parse-birthdates",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Extract birth dates from a text",
   "main": "./lib/index.js",
   "scripts": {
